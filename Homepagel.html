@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MYCOLLEGE UNIVERSITY</title>
+    <link rel="stylesheet" href="Homepage.css">
+</head>
+<body>
+    <header class="header">
+        <img src="nammaicon.jpg" alt="University Logo" class="logo">
+        <div class="title-container">
+            <h1>MYCOLLEGE UNIVERSITY</h1>
+            <p>Owned and Managed by Mycollege Association</p>
+        </div>
+        <a href="index.html" class="logout-button">Log Out</a>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Notices</a></li>
+            <li><a href="#">Study Materials</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Dues</a></li>
+            <li class="dropdown">
+                <a href="#">Academics</a>
+                <div class="dropdown-content">
+                    <a href="#">Marks</a>
+                    <a href="#">Attendance</a>
+                </div>
+            </li>
+            <li><a href="#">CGPA Calculator</a></li>
+        </ul>
+    </nav>
+
+    <div class="identity-card">
+        <div class="photo-container">
+            <img src="nammaimage.webp" alt="Student Photo" class="student-photo">
+        </div>
+        <div class="details-container">
+            <h2>Student Information</h2>
+            <p><strong>Name:</strong> <span id="student-name">John Doe</span></p>
+            <p><strong>USN:</strong> <span id="student-usn">123456</span></p>
+            <p><strong>Branch:</strong> <span id="student-branch">Computer Science</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>For any issues, contact the <a href="mailto:support@college.edu">support team</a>.</p>
+    </footer>
+</body>
+</html>

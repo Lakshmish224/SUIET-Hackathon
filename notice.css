@@ -1,0 +1,49 @@
+/* Notices Page Styles */
+.notices-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Occupy the main part of the page */
+    text-align: center;
+  }
+  
+  .notice-message {
+    background-color: #f9fafb;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Fixed width for uniform layout */
+  }
+  
+  .notice-message i {
+    font-size: 3rem;
+    color: #5c6b7a;
+    margin-bottom: 20px;
+  }
+  
+  .notice-message h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .notice-message p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Button Styles (if needed for "Back" button in the future) */
+  .back-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
