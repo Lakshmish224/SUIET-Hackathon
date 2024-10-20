@@ -1,0 +1,71 @@
+
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+    }
+a {
+  color: black;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #546E7A;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

@@ -1,0 +1,234 @@
+/* args.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.args-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.args-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.args-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.args-table,.args-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.args-table-all{border:1px solid #ccc}
+.args-bordered tr,.args-table-all tr{border-bottom:1px solid #ddd}.args-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.args-table-all tr:nth-child(odd){background-color:#fff}.args-table-all tr:nth-child(even){background-color:#f1f1f1}
+.args-hoverable tbody tr:hover,.args-ul.args-hoverable li:hover{background-color:#ccc}.args-centered tr th,.args-centered tr td{text-align:center}
+.args-table td,.args-table th,.args-table-all td,.args-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.args-table th:first-child,.args-table td:first-child,.args-table-all th:first-child,.args-table-all td:first-child{padding-left:16px}
+.args-btn,.args-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.args-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.args-btn,.args-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.args-disabled,.args-btn:disabled,.args-button:disabled{cursor:not-allowed;opacity:0.3}.args-disabled *,:disabled *{pointer-events:none}
+.args-btn.args-disabled:hover,.args-btn:disabled:hover{box-shadow:none}
+.args-badge,.args-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.args-badge{border-radius:50%}
+.args-ul{list-style-type:none;padding:0;margin:0}.args-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.args-ul li:last-child{border-bottom:none}
+.args-tooltip,.args-display-container{position:relative}.args-tooltip .args-text{display:none}.args-tooltip:hover .args-text{display:inline-block}
+.args-ripple:active{opacity:0.5}.args-ripple{transition:opacity 0s}
+.args-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.args-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.args-dropdown-click,.args-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.args-dropdown-hover:hover .args-dropdown-content{display:block}
+.args-dropdown-hover:first-child,.args-dropdown-click:hover{background-color:#ccc;color:#000}
+.args-dropdown-hover:hover > .args-button:first-child,.args-dropdown-click:hover > .args-button:first-child{background-color:#ccc;color:#000}
+.args-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.args-check,.args-radio{width:24px;height:24px;position:relative;top:6px}
+.args-sidebar{height:100%;width:200px;background-color:#2c3e50;position:fixed!important;z-index:1;overflow:auto}
+.args-bar-block .args-dropdown-hover,.args-bar-block .args-dropdown-click{width:100%}
+.args-bar-block .args-dropdown-hover .args-dropdown-content,.args-bar-block .args-dropdown-click .args-dropdown-content{min-width:100%}
+.args-bar-block .args-dropdown-hover .args-button,.args-bar-block .args-dropdown-click .args-button{width:100%;text-align:left;padding:8px 16px}
+.args-main,#main{transition:margin-left .4s}
+.args-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.args-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.args-bar{width:100%;overflow:hidden}.args-center .args-bar{display:inline-block;width:auto}
+.args-bar .args-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.args-bar .args-dropdown-hover,.args-bar .args-dropdown-click{position:static;float:left}
+.args-bar .args-button{white-space:normal}
+.args-bar-block .args-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.args-bar-block.args-center .args-bar-item{text-align:center}.args-block{display:block;width:100%}
+.args-responsive{display:block;overflow-x:auto}
+.args-container:after,.args-container:before,.args-panel:after,.args-panel:before,.args-row:after,.args-row:before,.args-row-padding:after,.args-row-padding:before,
+.args-cell-row:before,.args-cell-row:after,.args-clear:after,.args-clear:before,.args-bar:before,.args-bar:after{content:"";display:table;clear:both}
+.args-col,.args-half,.args-third,.args-twothird,.args-threequarter,.args-quarter{float:left;width:100%}
+.args-col.s1{width:8.33333%}.args-col.s2{width:16.66666%}.args-col.s3{width:24.99999%}.args-col.s4{width:33.33333%}
+.args-col.s5{width:41.66666%}.args-col.s6{width:49.99999%}.args-col.s7{width:58.33333%}.args-col.s8{width:66.66666%}
+.args-col.s9{width:74.99999%}.args-col.s10{width:83.33333%}.args-col.s11{width:91.66666%}.args-col.s12{width:99.99999%}
+@media (min-width:601px){.args-col.m1{width:8.33333%}.args-col.m2{width:16.66666%}.args-col.m3,.args-quarter{width:24.99999%}.args-col.m4,.args-third{width:33.33333%}
+.args-col.m5{width:41.66666%}.args-col.m6,.args-half{width:49.99999%}.args-col.m7{width:58.33333%}.args-col.m8,.args-twothird{width:66.66666%}
+.args-col.m9,.args-threequarter{width:74.99999%}.args-col.m10{width:83.33333%}.args-col.m11{width:91.66666%}.args-col.m12{width:99.99999%}}
+@media (min-width:993px){.args-col.l1{width:8.33333%}.args-col.l2{width:16.66666%}.args-col.l3{width:24.99999%}.args-col.l4{width:33.33333%}
+.args-col.l5{width:41.66666%}.args-col.l6{width:49.99999%}.args-col.l7{width:58.33333%}.args-col.l8{width:66.66666%}
+.args-col.l9{width:74.99999%}.args-col.l10{width:83.33333%}.args-col.l11{width:91.66666%}.args-col.l12{width:99.99999%}}
+.args-rest{overflow:hidden}.args-stretch{margin-left:-16px;margin-right:-16px}
+.args-content,.args-auto{margin-left:auto;margin-right:auto}.args-content{max-width:980px}.args-auto{max-width:1140px}
+.args-cell-row{display:table;width:100%}.args-cell{display:table-cell}
+.args-cell-top{vertical-align:top}.args-cell-middle{vertical-align:middle}.args-cell-bottom{vertical-align:bottom}
+.args-hide{display:none!important}.args-show-block,.args-show{display:block!important}.args-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.args-auto{max-width:95%}}
+@media (max-width:600px){.args-modal-content{margin:0 10px;width:auto!important}.args-modal{padding-top:30px}
+.args-dropdown-hover.args-mobile .args-dropdown-content,.args-dropdown-click.args-mobile .args-dropdown-content{position:relative}	
+.args-hide-small{display:none!important}.args-mobile{display:block;width:100%!important}.args-bar-item.args-mobile,.args-dropdown-hover.args-mobile,.args-dropdown-click.args-mobile{text-align:center}
+.args-dropdown-hover.args-mobile,.args-dropdown-hover.args-mobile .args-btn,.args-dropdown-hover.args-mobile .args-button,.args-dropdown-click.args-mobile,.args-dropdown-click.args-mobile .args-btn,.args-dropdown-click.args-mobile .args-button{width:100%}}
+@media (max-width:768px){.args-modal-content{width:500px}.args-modal{padding-top:50px}}
+@media (min-width:993px){.args-modal-content{width:900px}.args-hide-large{display:none!important}.args-sidebar.args-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.args-hide-medium{display:none!important}}
+@media (max-width:992px){.args-sidebar.args-collapse{display:none}.args-main{margin-left:0!important;margin-right:0!important}.args-auto{max-width:100%}}
+.args-top,.args-bottom{position:fixed;width:100%;z-index:1}.args-top{top:0}.args-bottom{bottom:0}
+.args-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.args-display-topleft{position:absolute;left:0;top:0}.args-display-topright{position:absolute;right:0;top:0}
+.args-display-bottomleft{position:absolute;left:0;bottom:0}.args-display-bottomright{position:absolute;right:0;bottom:0}
+.args-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.args-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.args-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.args-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.args-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.args-display-container:hover .args-display-hover{display:block}.args-display-container:hover span.args-display-hover{display:inline-block}.args-display-hover{display:none}
+.args-display-position{position:absolute}
+.args-circle{border-radius:50%}
+.args-round-small{border-radius:2px}.args-round,.args-round-medium{border-radius:4px}.args-round-large{border-radius:8px}.args-round-xlarge{border-radius:16px}.args-round-xxlarge{border-radius:32px}
+.args-row-padding,.args-row-padding>.args-half,.args-row-padding>.args-third,.args-row-padding>.args-twothird,.args-row-padding>.args-threequarter,.args-row-padding>.args-quarter,.args-row-padding>.args-col{padding:0 8px}
+.args-container,.args-panel{padding:0.01em 16px}.args-panel{margin-top:16px;margin-bottom:16px}
+.args-code,.args-codespan{font-family:Consolas,"courier new";font-size:16px}
+.args-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.args-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.args-card,.args-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.args-card-4,.args-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.args-spin{animation:args-spin 2s infinite linear}@keyframes args-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.args-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.args-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.args-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.args-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.args-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.args-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.args-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.args-animate-input{transition:width 0.4s ease-in-out}.args-animate-input:focus{width:100%!important}
+.args-opacity,.args-hover-opacity:hover{opacity:0.60}.args-opacity-off,.args-hover-opacity-off:hover{opacity:1}
+.args-opacity-max{opacity:0.25}.args-opacity-min{opacity:0.75}
+.args-greyscale-max,.args-grayscale-max,.args-hover-greyscale:hover,.args-hover-grayscale:hover{filter:grayscale(100%)}
+.args-greyscale,.args-grayscale{filter:grayscale(75%)}.args-greyscale-min,.args-grayscale-min{filter:grayscale(50%)}
+.args-sepia{filter:sepia(75%)}.args-sepia-max,.args-hover-sepia:hover{filter:sepia(100%)}.args-sepia-min{filter:sepia(50%)}
+.args-tiny{font-size:10px!important}.args-small{font-size:12px!important}.args-medium{font-size:15px!important}.args-large{font-size:18px!important}
+.args-xlarge{font-size:24px!important}.args-xxlarge{font-size:36px!important}.args-xxxlarge{font-size:48px!important}.args-jumbo{font-size:64px!important}
+.args-left-align{text-align:left!important}.args-right-align{text-align:right!important}.args-justify{text-align:justify!important}.args-center{text-align:center!important}
+.args-border-0{border:0!important}.args-border{border:1px solid #ccc!important}
+.args-border-top{border-top:1px solid #ccc!important}.args-border-bottom{border-bottom:1px solid #ccc!important}
+.args-border-left{border-left:1px solid #ccc!important}.args-border-right{border-right:1px solid #ccc!important}
+.args-topbar{border-top:6px solid #ccc!important}.args-bottombar{border-bottom:6px solid #ccc!important}
+.args-leftbar{border-left:6px solid #ccc!important}.args-rightbar{border-right:6px solid #ccc!important}
+.args-section,.args-code{margin-top:16px!important;margin-bottom:16px!important}
+.args-margin{margin:16px!important}.args-margin-top{margin-top:16px!important}.args-margin-bottom{margin-bottom:16px!important}
+.args-margin-left{margin-left:16px!important}.args-margin-right{margin-right:16px!important}
+.args-padding-small{padding:4px 8px!important}.args-padding{padding:8px 16px!important}.args-padding-large{padding:12px 24px!important}
+.args-padding-16{padding-top:16px!important;padding-bottom:16px!important}.args-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.args-padding-32{padding-top:32px!important;padding-bottom:32px!important}.args-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.args-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.args-left{float:left!important}.args-right{float:right!important}
+.args-button:hover{color:#000!important;background-color:#ccc!important}
+.args-transparent,.args-hover-none:hover{background-color:transparent!important}
+.args-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.args-amber,.args-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.args-aqua,.args-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.args-blue,.args-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.args-light-blue,.args-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.args-brown,.args-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.args-cyan,.args-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.args-blue-grey,.args-hover-blue-grey:hover,.args-blue-gray,.args-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.args-green,.args-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.args-light-green,.args-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.args-indigo,.args-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.args-khaki,.args-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.args-lime,.args-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.args-orange,.args-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.args-deep-orange,.args-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.args-pink,.args-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.args-purple,.args-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.args-deep-purple,.args-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.args-red,.args-hover-red:hover{color:#fff!important;background-color:#D2312F!important}
+.args-vgray,.args-hover-vgray:hover{color:#fff!important;background-color:#546F7A!important}
+.args-sand,.args-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.args-teal,.args-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.args-yellow,.args-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.args-white,.args-hover-white:hover{color:#000!important;background-color:#fff!important}
+.args-black,.args-hover-black:hover{color:#fff!important;background-color:#000!important}
+.args-grey,.args-hover-grey:hover,.args-gray,.args-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.args-light-grey,.args-hover-light-grey:hover,.args-light-gray,.args-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.args-dark-grey,.args-hover-dark-grey:hover,.args-dark-gray,.args-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.args-pale-red,.args-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.args-pale-green,.args-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.args-pale-yellow,.args-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.args-pale-blue,.args-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.args-text-amber,.args-hover-text-amber:hover{color:#ffc107!important}
+.args-text-aqua,.args-hover-text-aqua:hover{color:#00ffff!important}
+.args-text-blue,.args-hover-text-blue:hover{color:#2196F3!important}
+.args-text-light-blue,.args-hover-text-light-blue:hover{color:#87CEEB!important}
+.args-text-brown,.args-hover-text-brown:hover{color:#795548!important}
+.args-text-cyan,.args-hover-text-cyan:hover{color:#00bcd4!important}
+.args-text-blue-grey,.args-hover-text-blue-grey:hover,.args-text-blue-gray,.args-hover-text-blue-gray:hover{color:#607d8b!important}
+.args-text-green,.args-hover-text-green:hover{color:#4CAF50!important}
+.args-text-light-green,.args-hover-text-light-green:hover{color:#8bc34a!important}
+.args-text-indigo,.args-hover-text-indigo:hover{color:#3f51b5!important}
+.args-text-khaki,.args-hover-text-khaki:hover{color:#b4aa50!important}
+.args-text-lime,.args-hover-text-lime:hover{color:#cddc39!important}
+.args-text-orange,.args-hover-text-orange:hover{color:#ff9800!important}
+.args-text-deep-orange,.args-hover-text-deep-orange:hover{color:#ff5722!important}
+.args-text-pink,.args-hover-text-pink:hover{color:#e91e63!important}
+.args-text-purple,.args-hover-text-purple:hover{color:#9c27b0!important}
+.args-text-deep-purple,.args-hover-text-deep-purple:hover{color:#673ab7!important}
+.args-text-red,.args-hover-text-red:hover{color:#f44336!important}
+.args-text-vgray,.args-hover-text-vgray:hover{color:#546F7A!important}
+.args-text-sand,.args-hover-text-sand:hover{color:#fdf5e6!important}
+.args-text-teal,.args-hover-text-teal:hover{color:#009688!important}
+.args-text-yellow,.args-hover-text-yellow:hover{color:#d2be0e!important}
+.args-text-white,.args-hover-text-white:hover{color:#fff!important}
+.args-text-black,.args-hover-text-black:hover{color:#000!important}
+.args-text-grey,.args-hover-text-grey:hover,.args-text-gray,.args-hover-text-gray:hover{color:#757575!important}
+.args-text-light-grey,.args-hover-text-light-grey:hover,.args-text-light-gray,.args-hover-text-light-gray:hover{color:#f1f1f1!important}
+.args-text-dark-grey,.args-hover-text-dark-grey:hover,.args-text-dark-gray,.args-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.args-border-amber,.args-hover-border-amber:hover{border-color:#ffc107!important}
+.args-border-aqua,.args-hover-border-aqua:hover{border-color:#00ffff!important}
+.args-border-blue,.args-hover-border-blue:hover{border-color:#2196F3!important}
+.args-border-light-blue,.args-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.args-border-brown,.args-hover-border-brown:hover{border-color:#795548!important}
+.args-border-cyan,.args-hover-border-cyan:hover{border-color:#00bcd4!important}
+.args-border-blue-grey,.args-hover-border-blue-grey:hover,.args-border-blue-gray,.args-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.args-border-green,.args-hover-border-green:hover{border-color:#4CAF50!important}
+.args-border-light-green,.args-hover-border-light-green:hover{border-color:#8bc34a!important}
+.args-border-indigo,.args-hover-border-indigo:hover{border-color:#3f51b5!important}
+.args-border-khaki,.args-hover-border-khaki:hover{border-color:#f0e68c!important}
+.args-border-lime,.args-hover-border-lime:hover{border-color:#cddc39!important}
+.args-border-orange,.args-hover-border-orange:hover{border-color:#ff9800!important}
+.args-border-deep-orange,.args-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.args-border-pink,.args-hover-border-pink:hover{border-color:#e91e63!important}
+.args-border-purple,.args-hover-border-purple:hover{border-color:#9c27b0!important}
+.args-border-deep-purple,.args-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.args-border-red,.args-hover-border-red:hover{border-color:#f44336!important}
+.args-border-sand,.args-hover-border-sand:hover{border-color:#fdf5e6!important}
+.args-border-teal,.args-hover-border-teal:hover{border-color:#009688!important}
+.args-border-yellow,.args-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.args-border-white,.args-hover-border-white:hover{border-color:#fff!important}
+.args-border-black,.args-hover-border-black:hover{border-color:#000!important}
+.args-border-grey,.args-hover-border-grey:hover,.args-border-gray,.args-hover-border-gray:hover{border-color:#9e9e9e!important}
+.args-border-light-grey,.args-hover-border-light-grey:hover,.args-border-light-gray,.args-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.args-border-dark-grey,.args-hover-border-dark-grey:hover,.args-border-dark-gray,.args-hover-border-dark-gray:hover{border-color:#616161!important}
+.args-border-pale-red,.args-hover-border-pale-red:hover{border-color:#ffe7e7!important}.args-border-pale-green,.args-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.args-border-pale-yellow,.args-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.args-border-pale-blue,.args-hover-border-pale-blue:hover{border-color:#e7ffff!important}

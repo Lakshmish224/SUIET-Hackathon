@@ -1,0 +1,53 @@
+ul.social-profile {
+	list-style:none;
+	margin-left:0;
+}
+
+ul.social-profile li {
+	display:inline;
+}
+
+ul.social-profile li a:hover {
+	text-decoration:none;
+}
+.span12 {
+  width: 940px;
+}
+.section {
+		padding:180px 0 40px 0;
+	}
+
+.container{
+	padding: 0 20px 0 20px;
+}
+
+.row{
+	margin-bottom:40px;
+}
+
+.row .row, .row-fluid .row{
+	margin-bottom:0;
+}
+
+.span6 {
+  width: 460px;
+}
+
+.dotted_line {
+  padding:0;
+  margin:20px 0 20px 0;
+  width:100%;
+  height:1px;
+  border-bottom: 1px dotted #eeeeee;
+}
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column1 {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
