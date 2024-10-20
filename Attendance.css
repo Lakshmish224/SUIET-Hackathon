@@ -108,58 +108,37 @@
     background-color: #f1f1f1; /* Light grey background on hover */
   }
 
-  .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.BodyHeading {
-    color: #0d3e76;
-}
-
-/* Styles for the event list */
-.event-list {
-    list-style-type: none;
-    padding: 0;
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;;
+  }
+  
+  /* Notification Bell Icon Styling */
+  .notification-icon {
+    width: 60px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Styling for "Caught Up" Message */
+  h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
     margin: 0;
-}
-
-.event {
-    background-color: #f9f9f9;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.event:hover {
-    background-color: #e8e8e8;
-}
-
-.event h2 {
-    margin: 0;
-    color: #0d3e76;
-}
-
-.event p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.date {
-    font-weight: bold;
-    color: #333;
-}
-
-.back-container {
-    margin-top: 0.25rem;
-    margin-bottom: 2.5rem;
-    transform: translateX(590px);
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Back Button Styles */
+  .back-container {
+    margin-top: 2rem;
+    transform: translateX(610px);
   }
   
   .back-button {
@@ -172,6 +151,7 @@
     font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin: auto;
+    
   }
   
   .back-button:hover {
@@ -181,4 +161,10 @@
   
   .back-button:active {
     transform: translateY(1px);
+  }
+  
+  i{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transform: translateX(-4.5px);
   }
