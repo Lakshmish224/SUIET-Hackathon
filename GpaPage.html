@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GpaPage.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="nammaicon.jpg" alt="University Logo" class="logo">
+        <div class="title-container">
+            <h1>MYCOLLEGE UNIVERSITY</h1>
+            <p>Owned and Managed by Mycollege Association</p>
+        </div>
+        <a href="index.html" class="logout-button">Log Out</a>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Notices</a></li>
+            <li><a href="#">Study Materials</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Dues</a></li>
+            <li class="dropdown">
+                <a href="#">Academics</a>
+                <div class="dropdown-content">
+                    <a href="#">Marks</a>
+                    <a href="#">Attendance</a>
+                </div>
+            </li>
+            <li><a href="#">CGPA Calculator</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-text">Subject 1: Credits, Marks</span>
+            <input type="number" class="form-control" id="credits1" placeholder="Credits">
+            <input type="number" class="form-control" id="marks1" placeholder="Marks">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Subject 2: Credits, Marks</span>
+            <input type="number" class="form-control" id="credits2" placeholder="Credits">
+            <input type="number" class="form-control" id="marks2" placeholder="Marks">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Subject 3: Credits, Marks</span>
+            <input type="number" class="form-control" id="credits3" placeholder="Credits">
+            <input type="number" class="form-control" id="marks3" placeholder="Marks">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Subject 4: Credits, Marks</span>
+            <input type="number" class="form-control" id="credits4" placeholder="Credits">
+            <input type="number" class="form-control" id="marks4" placeholder="Marks">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Subject 5: Credits, Marks</span>
+            <input type="number" class="form-control" id="credits5" placeholder="Credits">
+            <input type="number" class="form-control" id="marks5" placeholder="Marks">
+        </div>
+
+        <button class="button" onclick="calculateGPA()">Calculate GPA</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="back-container"></div>
+    <a href="Homepagel.html" class="back-button">Back to Dashboard</a>
+    </div>
+
+    <script>
+        function calculateGPA() {
+            let totalCredits = 0;
+            let totalGradePoints = 0;
+
+            for (let i = 1; i <= 5; i++) {
+                const credits = parseFloat(document.getElementById(`credits${i}`).value);
+                const marks = parseFloat(document.getElementById(`marks${i}`).value);
+
+                if (!isNaN(credits) && !isNaN(marks)) {
+                    totalCredits += credits;
+                    const gradePoint = getGradePoint(marks);
+                    totalGradePoints += gradePoint * credits;
+                }
+            }
+
+            if (totalCredits === 0) {
+                document.getElementById("result").textContent = "Please enter valid credits and marks!";
+                return;
+            }
+
+            const gpa = totalGradePoints / totalCredits;
+            document.getElementById("result").textContent = `Your GPA is: ${gpa.toFixed(2)}`;
+        }
+
+        function getGradePoint(marks) {
+            if (marks >= 90) return 10;
+            if (marks >= 80) return 9;
+            if (marks >= 70) return 8;
+            if (marks >= 60) return 7;
+            if (marks >= 50) return 6;
+            if (marks >= 40) return 5;
+            return 0;
+        }
+    </script>
+</body>
+
+</html>

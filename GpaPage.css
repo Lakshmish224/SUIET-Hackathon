@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Add this to ensure padding doesn't affect width */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Full width */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.title-container {
+    text-align: left;
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}
+
+.logout-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem;
+    width: 100%;
+    /* Full width */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: center;
+    /* Center the navbar items */
+}
+
+.navbar li {
+    position: relative;
+    /* Make this relative for dropdown positioning */
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    /* Padding for better click area */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Add transition effects */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light hover effect */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.dropdown-content {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    /* Position it absolutely */
+    background-color: #ffffff;
+    /* Dropdown background */
+    min-width: 160px;
+    /* Set a minimum width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    /* Ensure dropdown is above other elements */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: #2980b9;
+    /* Color of dropdown items */
+    padding: 12px 16px;
+    /* Padding for dropdown items */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Full width of the dropdown */
+    transition: background-color 0.3s;
+    /* Transition for hover */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    /* Light grey background on hover */
+}
+
+/*Kaldka code from here :)*/
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transform: translateX(400px);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.input-group-text {
+    flex-basis: 50%;
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form-control {
+    flex-basis: 20%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2c3e50;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+/* Ganesh Code for Button*/
+.back-container {
+    margin-top: 0rem;
+    margin-bottom: 4.5rem;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    transform: translateX(620px);
+    /* transform: translateY(20px); */
+  }
+  
+
