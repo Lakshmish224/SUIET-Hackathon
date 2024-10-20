@@ -19,8 +19,45 @@
                 <input type="password" id="password" name="password" required placeholder=" " autocomplete="off">
                 <label for="password">Enter Password</label>
             </div>
-            <button type="submit" class="button submit-btn">Sign In</button>
+            <button type="submit" id="signInBtn" class="button submit-btn">Sign In</button>
         </form>
     </div>
 </body>
 </html>
+
+<script>
+    document.getElementById('signInBtn').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the form from submitting in the traditional way
+  
+      // Retrieve values from the form fields
+      const usn = document.getElementById('usn').value;
+      const password = document.getElementById('password').value;
+  
+      // Perform the API call using fetch
+      fetch(`http://localhost:3000/api/users/get?USN=${usn}&Password=${password}`, {  // Replace with your API URL
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); // Parse the response as JSON
+      })
+      .then(data => {
+        console.log('Success:', data); // Handle success response (e.g., store token, redirect)
+        
+        // Example: Redirect on successful login
+        localStorage.setItem('userData', JSON.stringify(data[0]));
+         window.location.href = 'Homepagel.html';
+      })
+      .catch(error => {
+        console.error('Error:', error);  // Handle any errors
+        alert('Login failed! Please check your credentials.');  // Display an error message
+      });
+    });
+  </script>
+  

@@ -45,8 +45,41 @@
                 <input type="password" id="confirm-password" name="confirm-password" required placeholder=" " autocomplete="off">
                 <label for="confirm-password">Confirm Password</label>
             </div>
-            <button type="submit" class="button submit-btn">Sign Up</button>
+            <button type="submit" class="button submit-btn" id="signUpBtn">Sign Up</button>
         </form>
     </div>
 </body>
 </html>
+
+
+<script>
+    document.getElementById('signUpBtn').addEventListener('click', function(event) {
+      event.preventDefault(); 
+      
+      fetch('http://localhost:3000/api/users/post', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          USN: document.getElementById('usn').value,  
+          Email: document.getElementById('email').value,
+          Name: document.getElementById('name').value,
+          Branch: document.getElementById('branch').value,
+          Password: document.getElementById('password').value,
+          PhoneNumber:document.getElementById('phone').value
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        if(data.message==="Saved successfully"){
+        window.location.href = 'signin.html';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+  

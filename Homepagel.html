@@ -13,7 +13,7 @@
             <h1>MYCOLLEGE UNIVERSITY</h1>
             <p>Owned and Managed by Mycollege Association</p>
         </div>
-        <a href="index.html" class="logout-button">Log Out</a>
+        <a href="index.html" class="logout-button" id="logoutBtn">Log Out</a>
     </header>
 
     <nav class="navbar">
@@ -48,5 +48,29 @@
     <footer>
         <p>For any issues, contact the <a href="mailto:support@college.edu">support team</a>.</p>
     </footer>
+
+    <script>
+        // Retrieve the stored user data from localStorage
+        const userData = JSON.parse(localStorage.getItem('userData'));
+
+        // Check if userData exists, else redirect to login
+        if (userData) {
+            // Update the student information on the page
+            document.getElementById('student-name').textContent = userData.Name || 'Name not available';
+            document.getElementById('student-usn').textContent = userData.USN || 'USN not available';
+            document.getElementById('student-branch').textContent = userData.Branch || 'Branch not available';
+        } else {
+            // If no user data found, redirect to sign-in page
+            window.location.href = 'signin.html';
+        }
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            // Clear the user data from localStorage
+            localStorage.removeItem('userData');
+            // Redirect to the login page
+            window.location.href = 'signin.html';
+        });
+    </script>
 </body>
 </html>
