@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>ARGS Infotech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style33.css">
+<link rel="stylesheet" href="css/style32.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/args%20infotech.jpg");
+  min-height: 100%;
+}
+
+.args-bar .args-button {
+  padding: 16px;
+}
+    
+html {
+  scroll-behavior: smooth;
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="args-top">
+  <div class="args-bar args-white args-card" id="myNavbar">
+    <a href="#home" class="args-bar-item args-button args-wide">VTU IN POCKETS</a>
+    <!-- Right-sided navbar links -->
+    <div class="args-right args-hide-small">
+      <a href="#home" class="args-bar-item args-button">Home</a>
+      <a href="#team" class="args-bar-item args-button"><i class="fa fa-book"></i> Notes & Resources</a>
+      <a href="#work" class="args-bar-item args-button"><i class="fa fa-signal"></i> Vtu Result</a>
+      <a href="#pricing" class="args-bar-item args-button"><i class="fa fa-calculator"></i> CGPA Calculator</a>
+      <a href="#contact" class="args-bar-item args-button"><i class="fa fa-group"></i> About</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="args-bar-item args-button args-right args-hide-large args-hide-medium" onclick="args_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="args-sidebar args-bar-block args-black args-card args-animate-left args-hide-medium args-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="args_close()" class="args-bar-item args-button args-large args-padding-16">Close ×</a>
+ <a href="#home" class="args-bar-item args-button">Home</a>
+      <a href="#team" class="args-bar-item args-button"><i class="fa fa-book"></i> Notes & Resources</a>
+      <a href="#work" class="args-bar-item args-button"><i class="fa fa-signal"></i> Vtu Result</a>
+      <a href="#pricing" class="args-bar-item args-button"><i class="fa fa-calculator"></i> CGPA Calculator</a>
+      <a href="#contact" class="args-bar-item args-button"><i class="fa fa-group"></i> About</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 args-display-container " id="home">
+  <div class="args-display-left args-text-black" style="padding:48px">
+    <span class="args-jumbo args-hide-small">VTU IN POCKETS</span><br>
+    <span class="args-xxlarge args-hide-large args-hide-medium">VTU IN POCKETS</span><br>
+    <span class="args-large">Stuck with projects, with no escape? Pass on your worries and workload to us.</span>
+   <!-- <p><a href="#about"  class="args-button args-white args-padding-large args-large args-margin-top args-opacity args-hover-opacity-off">Learn more and start today</a></p>-->
+    <p><a href="https://play.google.com/store/apps/details?id=com.my.Vtuinpockets"><img src="images/playstor.png" width="50%" height="35%"></a></p>
+  </div> 
+  <div class="args-display-bottomleft args-text-grey args-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official args-hover-opacity"></i>
+      <a href="https://www.instagram.com/argsinfotech"> <i class="fa fa-instagram args-hover-opacity"></i></a>
+    <i class="fa fa-snapchat args-hover-opacity"></i>
+    <i class="fa fa-pinterest-p args-hover-opacity"></i>
+    <i class="fa fa-twitter args-hover-opacity"></i>
+    <i class="fa fa-linkedin args-hover-opacity"></i>
+  </div>
+</header>
+
+
+    
+<!-- Footer -->
+<footer class="args-center args-black args-padding-64">s
+  <div class="args-xlarge args-section">
+    <i class="fa fa-facebook-official args-hover-opacity"></i>
+ <a href="https://www.instagram.com/argsinfotech"><i class="fa fa-instagram args-hover-opacity"></i></a> 
+    <i class="fa fa-snapchat args-hover-opacity"></i>
+    <i class="fa fa-pinterest-p args-hover-opacity"></i>
+    <i class="fa fa-twitter args-hover-opacity"></i>
+    <i class="fa fa-linkedin args-hover-opacity"></i>
+  </div>
+  <p>&copy; AGRS Infotech labs Inc - All right reserved</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function args_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function args_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
