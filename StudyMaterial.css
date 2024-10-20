@@ -140,3 +140,24 @@ p {
     background: #2c3e50;
     color: white;
 }
+
+.back-container {
+    margin-top: 5rem;
+    margin-bottom: 4.5rem;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    transform: translateX(620px);
+    /* transform: translateY(20px); */
+  }
+  
